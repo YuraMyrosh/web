@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tesla's Site</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="dark_mode.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript">
+		var mark=0;
+var maxmark=0;
+		function re()
+		{
+			alert("Thank you for attention. your mark is "+mark+"/"+maxmark);
+			location.reload(true);
+		};		
+	</script>
+</head>
+<body onload= "Load()">	
+<div class="main">
+	<nav class="menu">
+		<ul class="menu_list">
+			<li><a href="#Table" class="menu_link">Test</a></li>
+			<li> <a href="" class="menu_link" id=1>Menu</a> <span class="arrow menu_arrow"></span>
+				<ul class="sub-menu">
+					<li><a href="#footer" class="sub-menu_link">About us</a></li>
+					<li><a href="https://uk.wikipedia.org/wiki/Нікола_Тесла" class="sub-menu_link" target="_blank">Wiki</a></li>
+					<li><a href="" class="sub-menu_link">Photos</a></li>
+				</ul>
+			</li>
+			<button class="button_style" onclick="Black()">Lightning</button>
+		</ul>
+		<button class="button_style_dark hidden_but" onclick="White()">Lightning</button>		
+	</nav>			
+	<div class="main_information">
+
+		<div class="title">
+		Title1
+		</div>
+
+		<div class="common_text" >
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. In porro dolore, praesentium accusantium recusandae nostrum dolorem et quia! Nihil officia aspernatur, blanditiis maxime enim. Laborum, harum deserunt odit, consequuntur nobis consequatur reprehenderit nesciunt vitae blanditiis nulla aut assumenda voluptatem. Cum consequuntur, voluptatibus cumque sunt. Labore nulla sequi eveniet, neque omnis cum, laborum, pariatur totam provident at officiis explicabo aut repellat iste. Culpa, id modi? Distinctio doloribus dicta officia expedita optio debitis placeat quod quis sequi, illum autem libero, odit corporis laudantium! Aperiam repellat magnam architecto suscipit qui blanditiis odit dicta cupiditate neque corporis, nostrum facere obcaecati vel officiis, aspernatur reiciendis nobis quod quasi repellendus nisi accusamus debitis! Ut enim aspernatur animi in. Debitis, aperiam praesentium obcaecati quidem officiis! Eveniet sit dolores ratione ipsa assumenda ab porro quaerat nisi exercitationem officiis magnam eos delectus dignissimos corporis, molestias asperiores vitae minima dolorem, aperiam. Odio architecto eius reprehenderit, voluptates dolores laboriosam consequatur ullam provident similique eum nihil aspernatur natus a debitis inventore eos vero quisquam, recusandae magnam nesciunt velit neque. Dolor doloribus sapiente doloremque quo nam facilis id laborum, est eaque, fugit reiciendis perferendis quis corporis, nihil similique facere. Consectetur ex hic voluptatum esse! Eos, a autem. Voluptas sit totam, sunt maiores sint saepe distinctio aperiam! Ut aliquam numquam consequuntur nisi nulla, eos voluptate labore sequi ullam doloribus debitis fugit temporibus ea soluta reiciendis accusamus non saepe. Quae sequi labore qui, debitis incidunt velit vel. Placeat laborum maxime debitis qui officiis doloremque doloribus ab beatae explicabo reiciendis, labore nulla hic facilis dolor, molestiae!				
+		</div>		
+	</div>
+		<div class="infom_after_main">
+			<div class="title">
+			Titel2
+			</div>
+			<div class="common_text_after">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. In ea soluta quos sapiente eum maxime, dolorum ratione enim non, placeat neque ducimus nulla ullam distinctio numquam necessitatibus doloribus quisquam ipsa nam! Voluptate, atque. Quae, velit, debitis. Earum omnis enim odit ut eligendi consequuntur maxime quam, porro dolor numquam error, esse, officiis quo tempore animi rerum. Pariatur tenetur iste delectus iure adipisci alias assumenda architecto, aperiam magni fugit ipsa nam sunt libero fugiat hic nulla quia, vitae inventore minima saepe eveniet eum. Ullam similique totam et beatae? Ipsum maxime enim tempora. Atque rem ipsam illum dolorum quibusdam magnam saepe natus qui, facere iure explicabo magni illo, tempora deserunt provident, aspernatur maiores quo accusamus unde. Doloremque quos autem officia laboriosam voluptatibus consequatur architecto fuga veniam harum consectetur. Quaerat blanditiis commodi nemo aliquid minima placeat ut, aut praesentium distinctio voluptatibus asperiores similique dicta molestias id nihil a, quas architecto voluptate ea nobis cupiditate?
+			</div>			
+		</div>
+
+		<div class="photo">
+			<div class="list">
+				<img src="lighting.jpg" alt="" name="img1">
+			</div>
+			<div class="list">
+				<img src="lighting.jpg" alt="" name="img2">
+			</div>
+			<div class="list">
+				<img src="lighting.jpg" alt="" name="img3">
+			</div>
+			<div class="list">
+				<img src="lighting.jpg" alt="" name="img4">
+			</div>
+		</div>	
+
+		<div class="place_for_table">
+			<table class="table" id="Table">
+				<caption class="head_of_table">Quetions</caption>
+				<tr class="table_row">
+					<td class="table_column">What is your gender?</td>
+					<td class="table_column"> Male <input type="radio"  name="radio" value="Male">
+						<span class="checkmark"></span> 						</td>
+					<td class="table_column"> Female <input type="radio"  name="radio" value="Female"></td>
+					<td class="table_column">I don't know <input type="radio" checked="checked" name="radio" value="I don't know"></td>
+				</tr>
+				<tr class="table_row">
+					<td class="table_column">Smth about you(5-6 words): </td>
+					<td class="table_column" ><input type="text" name="text" value="" id="text"></td>
+					<td class="table_column">I'm older 18 <input type="checkbox" name="checkbox" value="I'm"></td>
+					<td class="table_column">
+						<select  name="select" id="mainselect"> What are you know about Tesla
+							<option value="0">What do you know about Tesla</option>
+							<option value="1" id="Select_1">He is scientist</option>
+							<option value="2" id="Select_2">All</option>
+							<option value="3" id="Select_3">Noting</option>
+						</select>
+					</td>
+					</tr>
+					<tr class="table_row">
+						<td class="table_column">Who opened the light bulb?</td>
+						<td class="table_column"> Edison <input type="radio"  name="scientist" value="Edison" id="Edison">
+						<span class="checkmark"></span> </td>
+						<td class="table_column">Tesla <input type="radio"  name="scientist" value="Tesla" id="Tesla"></td>
+						<td class="table_column">Both<input type="radio"  name="scientist" value="Both" id="Both"></td>
+					</tr>
+					<tr class="table_row">
+						<td class="table_column">Mark Tesla's Discovery</td>
+						<td class="table_column">Lighting<input type="checkbox" name="discovers" value="Lighting"></td>
+						<td class="table_column">Electric Cars<input type="checkbox" name="discovers" value="Electric Cars"></td>
+						<td class="table_column">AC <input type="checkbox" name="discovers" value="AC"></td>
+					</tr>
+					<tr class="table_row submit">
+						<td class="table_column">Do you like this site?</td>
+						<td class="table_column"><input type="submit" name="Yes" value="Yes" onclick="check_checkbox() ,check_radio(),check_select(), check_text_filed()"></td>
+						<td class="table_column"><input type="submit" name="No" value="No" onclick="check_checkbox() ,check_radio(),check_select(), check_text_filed()"></td>
+						<td class="table_column"><input type="submit" name="I don't know" value="I don't know" onclick="check_checkbox() ,check_radio(),check_select(), check_text_filed()"></td>
+					</tr>
+			</table>
+		</div>
+</div>
+		<footer class="footer" id="footer">
+			<ul class="flex_for_icons">
+				<li class="icons"><a href="https://www.instagram.com"class="social_link-1" target="_blank"></a></li>
+				<li class="icons"><a href="https://www.youtube.com"class="social_link-2" target="_blank"> </a></li>
+				<li class="icons"><a href="https://www.facebook.com"class="social_link-3" target="_blank"> </a></li>
+			</ul>
+			<br>
+			Join to us
+		</footer> 
+<script type="text/javascript" src="script.js"	></script>
+<script type="text/javascript" src="buttons.js"	></script>
+</body>
+</html>
